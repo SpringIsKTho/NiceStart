@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">NiceStart</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="Login">LOGIN</string>
+    <string name="Signup">SIGNUP</string>
 </resources>
