@@ -76,26 +76,24 @@
 
     <Button
         android:id="@+id/btnLogin"
+        android:onClick="openMain"
+        android:layout_marginTop="4dp"
         android:layout_width="0dp"
         android:layout_height="60dp"
-        android:layout_marginTop="5dp"
         app:layout_constraintEnd_toEndOf="@id/gline1"
         app:layout_constraintStart_toStartOf="@id/gline2"
         app:layout_constraintTop_toBottomOf="@id/tinp2"
         android:text="@string/Login"
-        android:textColor="@color/PurpleDark"
-        android:backgroundTint="@color/white"/>
+        style="@style/buttonNormal" />
 
     <Button
         android:id="@+id/btnSignup"
         android:layout_width="0dp"
         android:layout_height="60dp"
-        android:layout_marginTop="5dp"
         app:layout_constraintEnd_toEndOf="@id/gline1"
         app:layout_constraintStart_toStartOf="@id/gline2"
         app:layout_constraintTop_toBottomOf="@id/btnLogin"
         android:text="@string/Signup"
-        android:textColor="@color/PurpleDark"
-        android:backgroundTint="@color/white"/>
+        style="@style/buttonOutlined" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
