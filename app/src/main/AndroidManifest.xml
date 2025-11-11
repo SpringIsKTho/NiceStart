@@ -10,18 +10,25 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/wave_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.NiceStart">
+        android:theme="@style/Theme.NiceStart.ConActionBar">
+        <activity
+            android:name=".Splash"
+            android:exported="true"
+            android:theme="@style/Theme.NiceStart.SinActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
         <activity
             android:name=".Signup"
-            android:exported="false" />
+            android:exported="true"
+            android:parentActivityName=".Login"
+            android:theme="@style/Theme.NiceStart.ConActionBar.Transparent" />
         <activity
             android:name=".Login"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:exported="true"
+            android:theme="@style/Theme.NiceStart.SinActionBar">
         </activity>
         <activity
             android:name=".MainActivity"
@@ -32,6 +39,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
