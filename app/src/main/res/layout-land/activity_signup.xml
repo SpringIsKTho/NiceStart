@@ -11,9 +11,8 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
         android:src="@drawable/ic_action_wave"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +36,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tinp1"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="@id/gline1"
         app:layout_constraintStart_toStartOf="@id/gline2"
@@ -57,7 +56,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tinp2"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         app:layout_constraintEnd_toEndOf="@id/gline1"
         app:layout_constraintStart_toStartOf="@id/gline2"
         app:layout_constraintTop_toBottomOf="@id/tinp1"
@@ -77,7 +76,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tinp3"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         app:layout_constraintEnd_toEndOf="@id/gline1"
         app:layout_constraintStart_toStartOf="@id/gline2"
         app:layout_constraintTop_toBottomOf="@id/tinp2"
