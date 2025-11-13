@@ -5,7 +5,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
     tools:context=".Profile">
 
     <ImageView
@@ -15,7 +14,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="80dp"/>
+        android:layout_marginTop="100dp"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gline1"
@@ -39,7 +38,7 @@
         android:fontFamily="@font/arimo_medium"
         android:gravity="center"
         android:text="@string/Username"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="32sp"
         app:layout_constraintEnd_toStartOf="@id/gline1"
         app:layout_constraintStart_toEndOf="@+id/gline2"
@@ -52,7 +51,7 @@
         android:fontFamily="@font/arimo_medium"
         android:gravity="left"
         android:text="@string/Desc"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@id/gline1"
         app:layout_constraintStart_toEndOf="@+id/gline2"

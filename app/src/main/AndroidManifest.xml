@@ -16,7 +16,8 @@
         <activity
             android:name=".Profile"
             android:exported="true"
-            android:theme="@style/Theme.NiceStart.ConActionBar.Transparent"/>
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.NiceStart.ConActionBar"/>
         <activity
             android:name=".Splash"
             android:exported="true"
