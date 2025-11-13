@@ -6,7 +6,7 @@ This **repository** is used to store constant updates on my first UI design clas
 
 ![splash_activity](img/splash.png)
 
-**Login view**
+**Old Login view**
 
 ![login_activity](img/login.png)
 
@@ -14,7 +14,7 @@ This **repository** is used to store constant updates on my first UI design clas
 
 ![newlogin_activity](img/newlogin.png)
 
-**Signup view**
+**Old Signup view**
 
 ![signup_activity](img/signup.png)
 
