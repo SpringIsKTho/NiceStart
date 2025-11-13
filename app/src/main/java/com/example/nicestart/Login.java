@@ -28,7 +28,7 @@ public class Login extends AppCompatActivity {
 
         Glide.with(this)
                 //.load(getDrawable(R.drawable.loginimage))
-                .load("https://wallpapers.com/images/hd/clouds-phone-1440-x-2960-zzqx8ssjs7yfgzan.jpg")
+                .load("https://images.unsplash.com/photo-1669393008752-70ba9c2a941f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2xvdWRzJTIwd2FsbHBhcGVyfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000")
                 //.load("https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80")
                 .transition(DrawableTransitionOptions.withCrossFade(100))
                 //.centerCrop()
