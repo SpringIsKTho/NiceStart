@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
+        <item>@font/anek_odia_medium</item>
+        <item>@font/arimo_medium</item>
         <item>@font/coming_soon</item>
         <item>@font/pacifico</item>
         <item>@font/sunshiney</item>
