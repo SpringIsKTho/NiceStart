@@ -11,10 +11,13 @@ import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
+import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,8 +38,17 @@ public class MainActivity extends AppCompatActivity {
             mOnRefreshListener = new SwipeRefreshLayout.OnRefreshListener() {
         @Override
         public void onRefresh() {
-            Toast toast0 = Toast.makeText(MainActivity.this, "Swipe refreshed", Toast.LENGTH_LONG);
-            toast0.show();
+            final ConstraintLayout mLayout = findViewById(R.id.mainConst);
+            Snackbar snackbar = Snackbar
+                    .make(mLayout, "Page reset", Snackbar.LENGTH_SHORT)
+                    .setAction("UNDO", new View.OnClickListener(){
+                        @Override
+                        public void onClick(View view){
+                            Snackbar snackbar1 = Snackbar.make(mLayout, "Action restored", Snackbar.LENGTH_SHORT);
+                            snackbar1.show();
+                        }
+                    });
+            snackbar.show();
             swipeLayout.setRefreshing(false);
         }
     };
