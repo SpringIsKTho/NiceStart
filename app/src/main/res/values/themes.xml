@@ -1,7 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Theme.NiceStart.SinActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-
+        <item name="android:windowIsTranslucent">true</item>
     </style>
 
     <style name="Theme.NiceStart." parent="Base.Theme.NiceStart" />
