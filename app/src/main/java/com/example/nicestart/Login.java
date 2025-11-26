@@ -26,12 +26,10 @@ public class Login extends AppCompatActivity {
 
         ImageView mSea = findViewById(R.id.backView);
 
-        Glide.with(this)
+        Glide.with(this) //Para la imagen de fondo.
                 //.load(getDrawable(R.drawable.loginimage))
                 .load("https://images.unsplash.com/photo-1669393008752-70ba9c2a941f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2xvdWRzJTIwd2FsbHBhcGVyfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000")
-                //.load("https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80")
                 .transition(DrawableTransitionOptions.withCrossFade(100))
-                //.centerCrop()
                 .centerCrop()
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .placeholder(new ColorDrawable(this.getResources().getColor(R.color.transparent)))
@@ -39,8 +37,8 @@ public class Login extends AppCompatActivity {
     }
 
     public void openMain(View v){
-        Intent intent = new Intent(Login.this, MainActivity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        Intent intent = new Intent(Login.this, MainActivity.class); //Intents para cada boton (meter onclick en el layout).
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK); //Al pinchar atras no vuelve.
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
     }

@@ -43,16 +43,16 @@ public class Splash extends AppCompatActivity {
         Animation myanim = AnimationUtils.loadAnimation(this, R.anim.blink);
         Animation myanim2 = AnimationUtils.loadAnimation(this, R.anim.fadein);
         wave.startAnimation(myanim);
-        wave.startAnimation(myanim2);
+        wave.startAnimation(myanim2); //Animaciones de la carpeta anim, alterar en caso de que se pida.
 
         openApp();
     }
 
     private void openApp(){
-        Handler handler = new Handler();
+        Handler handler = new Handler(); //Handler hace que se espere antes de abrir la otra aplicacion.
         handler.postDelayed(new Runnable() {
             @Override
-            public void run() {
+            public void run() { //run para abrir el login.
                 Intent intent = new Intent(Splash.this, Login.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);

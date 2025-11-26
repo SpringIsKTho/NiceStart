@@ -4,11 +4,11 @@
     <item
         android:id="@+id/itemCopy"
         android:title="Copy"
-        app:showAsAction="never"/>
+        app:showAsAction="never"/> <!-- Never hace lo de los 3 puntitos-->
 
     <item
         android:id="@+id/itemSettings"
         android:title="Settings"
         android:icon="@drawable/settings"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="ifRoom"/> <!-- El de la izquierda del app bar -->
 </menu>

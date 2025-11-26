@@ -28,20 +28,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        TextView mycontext = findViewById(R.id.mytext);
-        registerForContextMenu(mycontext);
-        swipeLayout = findViewById(R.id.swipe);
-        swipeLayout.setOnRefreshListener(mOnRefreshListener);
+        TextView mycontext = findViewById(R.id.mytext); //para el contexto (mantener pulsado)
+        registerForContextMenu(mycontext); //se debe registrar
+        swipeLayout = findViewById(R.id.swipe); //swipelayout, importante meter en el xml.
+        swipeLayout.setOnRefreshListener(mOnRefreshListener); //la variable se inicializa.
     }
 
-    protected SwipeRefreshLayout.OnRefreshListener
+    protected SwipeRefreshLayout.OnRefreshListener //Refresh de pagina, hacer imports necesarios.
             mOnRefreshListener = new SwipeRefreshLayout.OnRefreshListener() {
         @Override
         public void onRefresh() {
             final ConstraintLayout mLayout = findViewById(R.id.mainConst);
             Snackbar snackbar = Snackbar
-                    .make(mLayout, "Page reset", Snackbar.LENGTH_SHORT)
-                    .setAction("UNDO", new View.OnClickListener(){
+                    .make(mLayout, "Page reset", Snackbar.LENGTH_SHORT) //texto
+                    .setAction("UNDO", new View.OnClickListener(){ //accion, se le puede meter otro snackbar
                         @Override
                         public void onClick(View view){
                             Snackbar snackbar1 = Snackbar.make(mLayout, "Action restored", Snackbar.LENGTH_SHORT);
@@ -49,11 +49,11 @@ public class MainActivity extends AppCompatActivity {
                         }
                     });
             snackbar.show();
-            swipeLayout.setRefreshing(false);
+            swipeLayout.setRefreshing(false); //Importante.
         }
     };
 
-    public void openProfile(View v) {
+    public void openProfile(View v) { //Intent para abrir
         Intent intent = new Intent(MainActivity.this, Profile.class);
         startActivity(intent);
     }
@@ -63,10 +63,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         getMenuInflater().inflate(R.menu.menu_context, menu);
-    }
+    } //Crea el context menu y mete sus items.
 
     @Override
-    public boolean onContextItemSelected(MenuItem item) {
+    public boolean onContextItemSelected(MenuItem item) { //Al seleccionar algo del context menu
         if (item.getItemId() == R.id.item1) {
             Toast toast = Toast.makeText(this, "item copied", Toast.LENGTH_LONG);
             toast.show();
@@ -78,13 +78,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    public boolean onCreateOptionsMenu(Menu menu) { //Options Menu de arriba.
         getMenuInflater().inflate(R.menu.menu_appbar, menu);
         return true;
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item) { //Al seleccionar algo del options menu.
         if (item.getItemId() == R.id.itemCopy) {
             Toast toast = Toast.makeText(this, "item copied", Toast.LENGTH_LONG);
             toast.show();
