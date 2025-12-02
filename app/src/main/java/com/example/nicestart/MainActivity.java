@@ -19,6 +19,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
@@ -94,9 +95,8 @@ public class MainActivity extends AppCompatActivity {
             Toast toast = Toast.makeText(this, "open settings", Toast.LENGTH_LONG);
             toast.show();
         } else if (item.getItemId() == R.id.itemLogOff) {
-            AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setTitle("Log Off");
-            builder.setMessage("Are you sure you want to log off?");
+            MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(this);
+            builder.setView(getLayoutInflater().inflate(R.layout.dialog_logoff, null));
             builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int i){
