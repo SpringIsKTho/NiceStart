@@ -38,5 +38,8 @@ This **repository** is used to store constant updates on my first UI design clas
 **Undo the Snackbar's refresh**
 ![snack_undo](img/snackbarundo.png)
 
+**New Log off option with a custom view dialog**
+![dialog_logoff](img/dialog_logoff.png)
+
 >This project is under creative commons
 >[Creativecommons Org Licensed By Sa 4](https://creativecommons.org/licenses/by-sa/4.0)
