@@ -7,6 +7,12 @@
         app:showAsAction="never"/> <!-- Never hace lo de los 3 puntitos-->
 
     <item
+        android:id="@+id/itemLogOff"
+        android:title="LogOff"
+        android:icon="@drawable/exit_svgrepo_com"
+        app:showAsAction="ifRoom"/>
+
+    <item
         android:id="@+id/itemSettings"
         android:title="Settings"
         android:icon="@drawable/settings"

@@ -1,5 +1,6 @@
 package com.example.nicestart;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.graphics.Insets;
@@ -91,6 +93,28 @@ public class MainActivity extends AppCompatActivity {
         } else if (item.getItemId() == R.id.itemSettings) {
             Toast toast = Toast.makeText(this, "open settings", Toast.LENGTH_LONG);
             toast.show();
+        } else if (item.getItemId() == R.id.itemLogOff) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle("Log Off");
+            builder.setMessage("Are you sure you want to log off?");
+            builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int i){
+                    Intent intent = new Intent(MainActivity.this, Login.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                    startActivity(intent);
+                }
+            });
+
+            builder.setNegativeButton("No", new DialogInterface.OnClickListener(){
+                @Override
+                public void onClick(DialogInterface dialog, int i){
+                    dialog.dismiss();
+                }
+            });
+
+            builder.show();
         }
         return false;
     }
