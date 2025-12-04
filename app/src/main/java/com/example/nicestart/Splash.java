@@ -29,8 +29,8 @@ public class Splash extends AppCompatActivity {
         ImageView mSea = findViewById(R.id.backView);
 
         Glide.with(this)
-                //.load(getDrawable(R.drawable.loginimage))
-                .load(R.drawable.splashimage)
+                .load(getDrawable(R.drawable.loginimage))
+                //.load(R.drawable.splashimage)
                 //.load("https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80")
                 .transition(DrawableTransitionOptions.withCrossFade(100))
                 //.centerCrop()
