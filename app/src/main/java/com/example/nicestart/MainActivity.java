@@ -7,6 +7,7 @@ import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,13 +26,24 @@ import com.google.android.material.snackbar.Snackbar;
 public class MainActivity extends AppCompatActivity {
 
     private SwipeRefreshLayout swipeLayout;
+    private WebView miVisorWeb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        TextView mycontext = findViewById(R.id.mytext); //para el contexto (mantener pulsado)
+        miVisorWeb = (WebView) findViewById(R.id.webViewMain);
+        String html = "<html>" +
+                "<head><style>" +
+                "html, body { margin:0; padding:0; height:100%; overflow:hidden; }"
+                + "img { width:100%; height:100%; object-fit:cover; }" +
+                "</style></head>" +
+                "<body>" +
+                "<img src ='https://thispersondoesnotexist.com' />" +
+                "</body></html>";
+        miVisorWeb.loadDataWithBaseURL(null, html, "text/html", "UTF-8", null);
+        WebView mycontext = findViewById(R.id.webViewMain); //para el contexto (mantener pulsado)
         registerForContextMenu(mycontext); //se debe registrar
         swipeLayout = findViewById(R.id.swipe); //swipelayout, importante meter en el xml.
         swipeLayout.setOnRefreshListener(mOnRefreshListener); //la variable se inicializa.
@@ -52,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                     });
             snackbar.show();
+            miVisorWeb.reload();
             swipeLayout.setRefreshing(false); //Importante.
         }
     };
