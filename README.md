@@ -41,5 +41,8 @@ This **repository** is used to store constant updates on my first UI design clas
 **New Log off option with a custom view dialog**
 ![dialog_logoff](img/dialog_logoff.png)
 
+**Added a WebView visor por background images**
+![WebView_img](img/webview.png)
+
 >This project is under creative commons
 >[Creativecommons Org Licensed By Sa 4](https://creativecommons.org/licenses/by-sa/4.0)
