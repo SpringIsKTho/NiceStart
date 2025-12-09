@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 + "img { width:100%; height:100%; object-fit:cover; }" +
                 "</style></head>" +
                 "<body>" +
-                "<img src ='https://thispersondoesnotexist.com' />" +
+                "<img src ='https://https://media1.tenor.com/m/yheo1GGu3FwAAAAC/rick-roll-rick-ashley.gif' />" +
                 "</body></html>";
         miVisorWeb.loadDataWithBaseURL(null, html, "text/html", "UTF-8", null);
         WebView mycontext = findViewById(R.id.webViewMain); //para el contexto (mantener pulsado)

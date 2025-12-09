@@ -27,8 +27,8 @@ public class Login extends AppCompatActivity {
         ImageView mSea = findViewById(R.id.backView);
 
         Glide.with(this) //Para la imagen de fondo.
-                //.load(getDrawable(R.drawable.loginimage))
-                .load("https://images.unsplash.com/photo-1669393008752-70ba9c2a941f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2xvdWRzJTIwd2FsbHBhcGVyfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000")
+                .load(getDrawable(R.drawable.loginimage))
+                //.load("https://images.unsplash.com/photo-1669393008752-70ba9c2a941f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2xvdWRzJTIwd2FsbHBhcGVyfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000")
                 .transition(DrawableTransitionOptions.withCrossFade(100))
                 .centerCrop()
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
