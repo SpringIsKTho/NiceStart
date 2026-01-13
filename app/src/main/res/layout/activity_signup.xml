@@ -58,6 +58,8 @@
             android:drawableLeft="@drawable/usericon"
             android:alpha="0.6"
             android:background="@color/white"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
             android:hint="@string/Username"/>
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -78,6 +80,8 @@
             android:alpha="0.6"
             android:drawableLeft="@drawable/key_basic_com"
             android:background="@color/white"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
             android:hint="@string/Password"/>
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -97,6 +101,8 @@
             android:alpha="0.6"
             android:drawableLeft="@drawable/outline_alternate_email_24"
             android:background="@color/white"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
             android:hint="@string/Email"/>
     </com.google.android.material.textfield.TextInputLayout>
 

@@ -57,6 +57,8 @@
             android:drawableLeft="@drawable/usericon"
             android:alpha="0.6"
             android:background="@color/white"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:hint="@string/Username"/>
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -77,6 +79,8 @@
             android:alpha="0.6"
             android:drawableLeft="@drawable/key_basic_com"
             android:background="@color/white"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:hint="@string/Password"/>
     </com.google.android.material.textfield.TextInputLayout>
 
