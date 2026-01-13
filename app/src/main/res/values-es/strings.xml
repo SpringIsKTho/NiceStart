@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Username">Usuario</string>
+    <string name="Password">Contraseña</string>
+    <string name="Email">Correo</string>
+    <string name="Login">ENTRAR</string>
+    <string name="Signup">REGISTRAR</string>
+    <string name="Cancel">CANCELAR</string>
+</resources>
