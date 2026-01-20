@@ -14,10 +14,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NiceStart.ConActionBar">
         <activity
+            android:name=".MainBab"
+            android:exported="false"
+            android:theme="@style/Theme.NiceStart.ConActionBar" />
+        <activity
             android:name=".Profile"
             android:exported="true"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.NiceStart.ConActionBar"/>
+            android:theme="@style/Theme.NiceStart.ConActionBar" />
         <activity
             android:name=".Splash"
             android:exported="true"
@@ -36,10 +40,10 @@
         <activity
             android:name=".Login"
             android:exported="true"
-            android:theme="@style/Theme.NiceStart.SinActionBar"/>
+            android:theme="@style/Theme.NiceStart.SinActionBar" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"/>
+            android:exported="true" />
 
         <meta-data
             android:name="preloaded_fonts"

@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
     };
 
     public void openProfile(View v) { //Intent para abrir
-        Intent intent = new Intent(MainActivity.this, Profile.class);
+        Intent intent = new Intent(MainActivity.this, MainBab.class);
         startActivity(intent);
     }
 

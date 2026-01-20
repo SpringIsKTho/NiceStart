@@ -49,5 +49,8 @@ This **repository** is used to store constant updates on my first UI design clas
 
 **Added a dark theme**
 ![Dark_theme](img/darkbar.png)
+
+**Added a bottom app bar**
+![BottomAppBar](img/bottomappbar.png)
 >This project is under creative commons
 >[Creativecommons Org Licensed By Sa 4](https://creativecommons.org/licenses/by-sa/4.0)
