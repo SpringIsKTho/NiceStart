@@ -11,10 +11,11 @@ These are updated versions with a glide background, they used to have a gradient
     <img src="img/newsignup.png" width="200" height="500"/>
 </p>
 
-**Added a profile page, plus some features on the main activity view**
+After that, we added a **profile page**, plus some features on the **main activity** view:
 
-**Profile**
-![profile_activity](img/profileview.png)
+<p>
+    <img src="img/profileview.png" width="100" height="300"/>
+</p>
 
 **Context Menu**
 ![context_menu](img/contextmenu.png)
