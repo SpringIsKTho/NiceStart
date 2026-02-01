@@ -32,13 +32,11 @@ WebView
     <img src="img/copybar.png"/>
     <img src="img/snackbar.png"/>
     <img src="img/snackbarundo.png"/>
+    <img src="img/dialog_logoff.png"/>
 </p>
-
-**New Log off option with a custom view dialog**
-![dialog_logoff](img/dialog_logoff.png)
-
-**Added a WebView visor por background images**
-![WebView_img](img/webview.png)
+<p>
+    <img src="img/webview.png" height="200" width="300">
+</p>
 
 **Added internationalization**
 ![Internationalization_img](img/International.png)
