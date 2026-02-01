@@ -7,7 +7,7 @@ These are updated versions with a glide background, they used to have a gradient
 
 <p>
     <img src="img/splash.png" width="200" height="500"/>
-    <img src="img/login.png" width="200" height="500"/>
+    <img src="img/loginNew.png" width="200" height="500"/>
     <img src="img/newsignup.png" width="200" height="500"/>
 </p>
 
