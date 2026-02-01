@@ -33,16 +33,21 @@ WebView
     <img src="img/snackbar.png"/>
     <img src="img/snackbarundo.png"/>
     <img src="img/dialog_logoff.png"/>
-    <img src="img/webview.png" height="200" width="100">
+    <img src="img/webview.png" height="200" width="100"/>
 </p>
 
-**Added internationalization**
-![Internationalization_img](img/International.png)
+After this, we added more features, including:
+```
+Internationalization
+Dark Theme
+Bottom App Bar with a navigation menu
+```
+<p>
+    <img src="img/Internationalization.png"/>
+    <img src="img/darkbar.png" width="200" height="100">
+    <img src="img/bottomapp.png"/>
+    <img src="img/NavigationBottom.png"/>
+</p>
 
-**Added a dark theme**
-![Dark_theme](img/darkbar.png)
-
-**Added a bottom app bar**
-![BottomAppBar](img/bottomappbar.png)
 >This project is under creative commons
 >[Creativecommons Org Licensed By Sa 4](https://creativecommons.org/licenses/by-sa/4.0)
