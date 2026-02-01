@@ -44,7 +44,7 @@ Bottom App Bar with a navigation menu
 ```
 <p>
     <img src="img/Internationalization.png"/>
-    <img src="img/darkbar.png" width="300" height="200">
+    <img src="img/darkbar.png" width="100" height="200">
     <img src="img/bottomapp.png"/>
     <img src="img/NavigationBottom.png"/>
 </p>
