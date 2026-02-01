@@ -1,18 +1,10 @@
-## Introduction to NICESTART, got some stuff to check out ##
+# NICESTART, my first steps
 
-This **repository** is used to store constant updates on my first UI design class.
+## This **repository** is used to store constant updates on my first UI design class.
 
-**Splash view**
+The first thing we started off with this project were the Splash, Login and SignUp screens
 
-![splash_activity](img/splash.png)
-
-**Login**
-
-![newlogin_activity](img/newlogin.png)
-
-**Signup**
-
-![signup_activity](img/newsignup.png)
+![splash_activity](img/splash.png) ![newlogin_activity](img/newlogin.png) ![signup_activity](img/newsignup.png)
 
 **Added a profile page, plus some features on the main activity view**
 
