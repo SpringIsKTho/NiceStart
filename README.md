@@ -33,8 +33,6 @@ WebView
     <img src="img/snackbar.png"/>
     <img src="img/snackbarundo.png"/>
     <img src="img/dialog_logoff.png"/>
-</p>
-<p>
     <img src="img/webview.png" height="200" width="100">
 </p>
 
