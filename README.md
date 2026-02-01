@@ -13,7 +13,7 @@ These are updated versions with a glide background, they used to have a gradient
 
 After that, we added a **profile page**
 <p>
-    <img src="img/profileview.png" width="100" height="300"/>
+    <img src="img/profileview.png" width="200" height="400"/>
 </p>
 
 Plus some features on the **main activity** view:
