@@ -3,11 +3,12 @@
 ## This **repository** is used to store constant updates on my first UI design class.
 
 The first thing we started off with this project were the Splash, Login and SignUp screens
+These are updated versions with a glide background, they used to have a gradient background.
 
 <p>
     <img src="img/splash.png" width="200" height="500"/>
-    <img src="img/login.png" width="200" height="500"/>
-    <img src="img/signup.png" width="200" height="500"/>
+    <img src="img/newlogin.png" width="200" height="500"/>
+    <img src="img/newsignup.png" width="200" height="500"/>
 </p>
 
 **Added a profile page, plus some features on the main activity view**
