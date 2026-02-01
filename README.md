@@ -4,7 +4,11 @@
 
 The first thing we started off with this project were the Splash, Login and SignUp screens
 
-![splash_activity](img/splash.png) ![newlogin_activity](img/newlogin.png) ![signup_activity](img/newsignup.png)
+<p>
+    <img src="img/splash.png" width="200" height="500"/>
+    <img src="img/login.png" width="200" height="500"/>
+    <img src="img/signup.png" width="200" height="500"/>
+</p>
 
 **Added a profile page, plus some features on the main activity view**
 
