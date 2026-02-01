@@ -11,30 +11,28 @@ These are updated versions with a glide background, they used to have a gradient
     <img src="img/newsignup.png" width="200" height="500"/>
 </p>
 
-After that, we added a **profile page**, plus some features on the **main activity** view:
-
+After that, we added a **profile page**
 <p>
     <img src="img/profileview.png" width="100" height="300"/>
 </p>
 
-**Context Menu**
-![context_menu](img/contextmenu.png)
+Plus some features on the **main activity** view:
+```
+Context Menu
+App bar
+Settings and Copy Toast
+Slide Refresh with an Undo option
+Log off button
+WebView
+```
 
-**App bar**
-
-![app_bar](img/menubar.png)
-
-**Settings Toast when pressed on the settings symbol**
-![app_click](img/clickbar.png)
-
-**Copy Context menu when pressing on the 3 dots**
-![app_copy](img/copybar.png)
-
-**SlideRefresh with Snackbar**
-![snack_bar](img/snackbar.png)
-
-**Undo the Snackbar's refresh**
-![snack_undo](img/snackbarundo.png)
+<p>
+    <img src="img/contextmenu.png"/>
+    <img src="img/menubar.png"/>
+    <img src="img/copybar.png"/>
+    <img src="img/snackbar.png"/>
+    <img src="img/snackbarundo.png"/>
+</p>
 
 **New Log off option with a custom view dialog**
 ![dialog_logoff](img/dialog_logoff.png)
