@@ -35,7 +35,7 @@ WebView
     <img src="img/dialog_logoff.png"/>
 </p>
 <p>
-    <img src="img/webview.png" height="200" width="300">
+    <img src="img/webview.png" height="200" width="100">
 </p>
 
 **Added internationalization**
