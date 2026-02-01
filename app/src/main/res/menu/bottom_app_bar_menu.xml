@@ -5,14 +5,14 @@
     <item
         android:id="@+id/heart"
         android:title="Favourite"
-        android:icon="@drawable/key_basic_com"
+        android:icon="@drawable/heart_svgrepo_com"
         app:showAsAction="ifRoom"
         />
 
     <item
         android:id="@+id/search"
         android:title="Language"
-        android:icon="@drawable/settings"
+        android:icon="@drawable/search_alt_1_svgrepo_com"
         app:showAsAction="ifRoom"
         />
 </menu>
